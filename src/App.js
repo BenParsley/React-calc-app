@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
 import "./App.css";
+import HarlequinPattern from "./HarlequinPattern";
 
 function App() {
     const inputRef = useRef(null);
@@ -49,16 +50,28 @@ function App() {
       setResult((0));
     }
  
-  return ( 
-    <div className="App"> 
-      <div> 
-        <h1>Simplest Working Calculator</h1> 
-      </div> 
+  return (
+    <div className="App">
+      {/* Background pattern. Keep exactly ONE variant uncommented. */}
 
-      <form> 
-        
+      {/* Default look */}
+      <HarlequinPattern />
+
+      {/* Larger, sparser pattern */}
+      {/* <HarlequinPattern cols={12} rows={12} scale={2} cellSize="10vmin" /> */}
+
+      {/* Dense, small symbols */}
+      {/* <HarlequinPattern cols={40} rows={40} scale={1} cellSize="4vmin" /> */}
+
+      {/* Custom symbols and colors */}
+      {/* <HarlequinPattern symbols={['(', ')', '^', 'π', '∞']} shapeColor="#90cdf4" background="#1a202c" /> */}
+
+      {/* Shape: "square" or "diamond" */}
+      {/* <HarlequinPattern shape="square" scale={1} /> */}
+      {/* <HarlequinPattern shape="diamond" /> */}
+
+      <form>
         <p ref={resultRef} className="result">{result}</p>
-        
         <input
           pattern="[0-9]*" 
           ref={inputRef} 
@@ -73,7 +86,6 @@ function App() {
           <button onClick={resetInput} className="reset">Reset Input</button>
           <button onClick={resetResult} className="reset">Reset Result</button>
         </div>
- 
       </form> 
     </div> 
   ); 

@@ -1,0 +1,38 @@
+.harlequin-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.harlequin-grid {
+  /* --cell, color and transform are set inline from props */
+  display: grid;
+  gap: 0;
+  font-size: calc(var(--cell) * 0.4);
+  transform-origin: center center;
+}
+
+.harlequin-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: inherit;
+  font-weight: 600;
+  user-select: none;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.harlequin-cell span {
+  display: inline-block;
+  transform: var(--counter-transform, rotate(-45deg));
+}
+
+.harlequin-cell:hover {
+  transform: scale(1.12);
+  filter: brightness(1.3);
+  z-index: 2;
+}
