@@ -1,6 +1,6 @@
 # React Calculator App 
-## Meta Front-End Developer Professional Certificate - React Basics
-## This project is a React-based calculator application built for the Meta Front-End Developer Professional Certificate.
+Meta Front-End Developer Professional Certificate - React Basics
+This project is a React-based calculator application built for the Meta Front-End Developer Professional Certificate.
 
 ## Prerequisites
 Ensure the following software is installed on the host machine:
