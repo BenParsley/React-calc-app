@@ -1,10 +1,6 @@
-# Getting Started with Create React App
-
-This project was created using [Create React App](https://github.com/facebook/create-react-app).
-
-# React Calculator App
-
-This project is a React-based calculator application built for the Meta Front-End Developer Professional Certificate.
+# React Calculator App 
+## Meta Front-End Developer Professional Certificate - React Basics
+## This project is a React-based calculator application built for the Meta Front-End Developer Professional Certificate.
 
 ## Prerequisites
 Ensure the following software is installed on the host machine:
